@@ -9,11 +9,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # File picker aur permissions
   file_picker: ^6.1.1
   path_provider: ^2.1.0
   permission_handler: ^11.0.1
-  syncfusion_flutter_pdfviewer: ^23.2.7
+
+  # 📌 IMPORTANT: Isko 24.1.46 ya upar karo (maine 24.1.46+ likh diya)
+  syncfusion_flutter_pdfviewer: ^24.1.46
+
+  # Rich text editor
   flutter_quill: ^9.3.0
+
+  # Flutter ka internal localization package (is se intl version resolve ho jaata hai)
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
@@ -21,4 +31,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  # assets folder kuch nahi daalna, hum dynamically font load karenge
